@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+   <div class="wrapper">
+
+    <nav id="sidebar">
+      <!-- <div class="sidebar-header">
+          <h3>Sidebar</h3>
+      </div> -->
+
+      <ul class="list-unstyled components">
+          <li class="">
+            <a href="#">Home</a>
+          </li>
+          <li>
+              <a href="#">About</a>
+          </li>
+          <li>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                  <li>
+                      Page 1
+                  </li>
+                  <li>
+                      Page 2
+                  </li>
+                  <li>
+                      Page 3
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">Resume</a>
+          </li>
+          <li>
+              <a href="contact.html">Contact</a>
+          </li>
+      </ul>
+  </nav>
+
+    <div class="content-wrapper">
+
+      <!-- <div class="show-nav"> -->
+        <nav
+        class="d-flex flex-row justify-content-between navbar navbar-expand-lg navbar-light bg-light"
+      >
+        <button type="button" id="sidebarCollapse" class="btn btn-info" style="background-color: #9b8f8d;">
+            <i class="fas fa-align-left"></i>
+            <span>Toggle Sidebar</span>
+        </button>
+        <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-align-justify"></i>
+      </button> -->
+        <!-- <a class="navbar-brand" href="#">Vishwajit</a> -->
+        <!-- <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="nav-link-div" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- </div> -->
+
+      <div class="image-grid">
+        <div class="grid-item-big" style="background-image: url(my-big-photo.jpg);">
+          <p class="home-text-big">Hey, I am Vishwajit!</p>
+          <!-- <div class="grid-item-big-photo">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, recusandae cum consequatur aliquid eveniet ad!
+            </p>
+          </div> -->
+        </div>
+  
+          <div class="grid-item" style="background-image: url(about.jpg)">
+            <a href="#aboutme"><p class="home-text-small">About</p></a>
+          </div>
+
+        
+
+          <div class="grid-item2" style="background-image: url(projects.png)">
+            <a href="#projects"><p class="home-text-small">Projects </p></a>
+          </div>
+
+
+          <div class="grid-item3" style="background-image: url(contact.png)">
+            <a href="contact.html"><p class="home-text-small">Contact</p></a>
+          </div>
+
+      </div>
+  
+      <div class="home-middle">
+          <div class="home-middle-img">
+            <img src="" />
+          </div>
+  
+          <div class="home-middle-text">
+            <div>
+              <p id="aboutme" class="home-middle-text-big">About me</p>
+              <p class="home-middle-text-small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                pellentesque ultricies aliquam. Morbi sed dui felis. Nulla viverra
+                lacus sem, et finibus ipsum pretium vitae. Etiam eu dolor in magna
+                tempor pharetra et mattis metus. Praesent vehicula leo quis sem
+                mattis, sit amet iaculis mauris hendrerit. Sed vehicula placerat
+                magna, a iaculis augue semper vel.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p id="skills" class="home-middle-text-big">Skills</p>
+
+        <div class="card">
+          
+          <div class="card-body">
+
+            <div class="row flex-basis">
+
+              <div class="col md-4 ">
+                <div class="card p-3 mb-2">
+                  <div class="mt-5">
+                      <h3 class="heading">ReactJs
+                      <div class="mt-5">
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              
+              <div class="col md-4">
+                <div class="card p-3 mb-2">
+                  <div class="mt-5">
+                      <h3 class="heading">AngularJS
+                      <div class="mt-5">
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-gap-2 w-100"></div>
+
+              <div class="col md-4">
+                <div class="card p-3 mb-2">
+                  <div class="mt-5">
+                      <h3 class="heading">jQuery
+                      <div class="mt-5">
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-gap-3 w-100"></div>
+
+              <div class="col md-4">
+                <div class="card p-3 mb-2">
+                  <div class="mt-5">
+                      <h3 class="heading">Bootstrap
+                      <div class="mt-5">
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-gap-2 w-100"></div>
+
+              <div class="col md-4">
+                <div class="card p-3 mb-2">
+                  <div class="mt-5">
+                      <h3 class="heading">CSS
+                      <div class="mt-5">
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col md-4">
+                <div class="card p-3 mb-2">
+                  <div class="mt-5">
+                      <h3 class="heading">HTML
+                      <div class="mt-5">
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="info-gap-3 w-100"></div>
+              <div class="info-gap-2 w-100"></div>
+
+
+            </div>
+          
+          </div>
+        </div>
+
+        <p class="home-middle-text-big mt-5">Languages</p>
+        <div class="padding mb-5">
+          <div class="row">
+              <div class="container-fluid d-flex justify-content-center">
+                      <div class="card">
+                          <div class="card-body card-width" >
+                              <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                                  <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                      <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+                                  </div>
+                                  <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                      <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                                  </div>
+                              </div> <canvas id="chart-line" width="299" height="200" class="chartjs-render-monitor" style="display: block; width: 299px; height: 200px;"></canvas>
+                          </div>
+                      </div>
+              </div>
+          </div>
+        </div>
+        <div class="mt-5 mb-5"><br></div>
+        <p id="projects" class="home-middle-text-big mt-5">Projects</p>
+  
+        <div class="info-container">
+          <div class="info-image-container-left">
+              <img src="project3.png" alt="" class="info-img"/>  
+          </div>
+          <div class="info-body">
+              <div class="info-title">
+                  <p>Number Plate Reader</p>
+              </div>
+              <div class="info-text">
+                  <p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis veritatis ea asperiores minus non sunt excepturi totam voluptas. Ullam unde dignissimos cumque labore aspernatur alias mollitia nostrum voluptatum! Et illo mollitia nihil!</p></p>
+              </div>
+              <div class="info-lower">
+                  <button class="info-btn">View</button>
+              </div>
+          </div>
+        </div>
+  
+        <div class="info-container"> 
+          <div class="info-body">
+              <div class="info-title">
+                  <p>College Admission Predictor</p>
+              </div>
+              <div class="info-text">
+                  <p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis veritatis ea asperiores minus non sunt excepturi totam voluptas. Ullam unde dignissimos cumque labore aspernatur alias mollitia nostrum voluptatum! Et illo mollitia nihil!</p></p>
+              </div>
+              <div class="info-lower">
+                  <button class="info-btn">View</button>
+              </div>
+          </div>
+          <div class="info-image-container-right">
+            <img src="project1.jpg" alt="" class="info-img"/>  
+          </div> 
+        </div>
+  
+        <div class="info-container">
+          <div class="info-image-container-left">
+              <img src="project2.png" alt="" class="info-img"/>  
+          </div>
+          <div class="info-body">
+              <div class="info-title">
+                  <p>Random Maze Generator</p>
+              </div>
+              <div class="info-text">
+                  <p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis veritatis ea asperiores minus non sunt excepturi totam voluptas. Ullam unde dignissimos cumque labore aspernatur alias mollitia nostrum voluptatum! Et illo mollitia nihil!</p></p>
+              </div>
+              <div class="info-lower">
+                  <button class="info-btn">View</button>
+              </div>
+          </div>
+        </div>
+        <p class="home-middle-text-big" style="font-size: large;">More...</p>
+
+        <div class="bg-light">
+          <div class="d-flex flex-row">
+
+            <div
+              class="footer-certification d-flex flex-column justify-content-center"
+            >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed architecto expedita quae.
+            </div>
+              
+    
+            <div class="footer-contact">
+              <div class="footer-contact-heading">
+                <p>Contact</p>
+              </div>
+    
+              <div class="footer-contact-details">
+                <div class="">
+                  <div class="footer-address-header">
+                    <span>
+                      <!-- <img src="" class="footer-icon" /> -->
+                    </span>
+                  </div>
+                  <div class="footer-phone-header">
+                    <span>
+                      <!-- <img src="" class="footer-icon" /> -->
+                    </span>
+                    <span>
+                      <b style="">Phone</b>
+                      <br />
+                      <p style="">1300 1300 13</p>
+                    </span>
+                  </div>
+                  <div class="footer-phone-header">
+                    <span>
+                      <!-- <img src="" class="footer-icon" /> -->
+                    </span>
+                    <span>
+                      <b>Email</b>
+                      <br />
+                      <p>emaIL@EMAIL.COM</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+    ></script>
+    <!-- Popper.JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sidebarCollapse").on("click", function () {
+          $("#sidebar").toggleClass("active");
+        });
+      });
+    </script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script>
+    <script>
+        $(document).ready(function() {
+            var ctx = $("#chart-line");
+            var myLineChart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ["C++", "Java", "Python", "JavaScript"],
+                    datasets: [{
+                        data: [1200, 1700, 800, 200],
+                        backgroundColor: ["rgba(255, 0, 0, 0.5)", "rgba(100, 255, 0, 0.5)", "rgba(200, 50, 255, 0.5)", "rgba(0, 100, 255, 0.5)"]
+                    }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: 'Languages'
+                    }
+                }
+            });
+        });
+    </script>
+  </body>
+</html>
