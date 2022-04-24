@@ -1,0 +1,16 @@
+[
+    {
+        "name":"abc xyz",
+        "username":"abc123",
+        "email":"abc@gmail.com",
+        "password":"12345",
+        "college":"pict"
+    },
+    {
+        "name":"efg pqr",
+        "username":"pqr123",
+        "email":"pqr@gmail.com",
+        "password":"12345",
+        "college":"pict"
+    }
+]
