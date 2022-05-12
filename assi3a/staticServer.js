@@ -37,16 +37,24 @@ const server = http
         return;
       }
 
-      fs.exists(filepath, (exists) => {
-        if (!exists) {
-          send404(res);
-          return;
-        }
+      // fs.existsSync(filepath, (exists) => {
+      //   if (!exists) {
+      //     send404(res);
+      //     return;
+      //   }
 
+      //   res.writeHead(200, { "Content-Type": mimeType });
+      //   fs.createReadStream(filepath).pipe(res);
+      // });
+
+      if(fs.existsSync(filepath)) {
         res.writeHead(200, { "Content-Type": mimeType });
         fs.createReadStream(filepath).pipe(res);
-      });
+      } else{
+        send404(res);
+        return;
+      };
     }
   })
-  .listen(3007);
+  .listen(3000);
 console.log("Server running at port 3000");
